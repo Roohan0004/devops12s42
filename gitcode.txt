@@ -1,0 +1,397 @@
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents
+$ git clone https://github.com/Roohan0004/devops12s42.git
+Cloning into 'devops12s42'...
+warning: You appear to have cloned an empty repository.
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents
+$ ls
+'My Music'@     'My Videos'@           cpweek11/     devops12s42/
+'My Pictures'@   afterSentDocuments/   desktop.ini
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents
+$ cd devops12s42
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (main)
+$ git branch -m develop
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git config --local user.name Roohan
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git config --local user.email l1f19bsse004
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git config core.editor notepad
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ mkdr ./src ./style
+bash: mkdr: command not found
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ mkdir ./src ./style
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ touch .gitignore
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ notepad .gitignore
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ npm init -y package.json
+npm error code E404
+npm error 404 Not Found - GET https://registry.npmjs.org/create-package.json - Not found
+npm error 404
+npm error 404  'create-package.json@*' is not in this registry.
+npm error 404
+npm error 404 Note that you can also install from a
+npm error 404 tarball, folder, http url, or git url.
+npm error A complete log of this run can be found in: C:\Users\l1f19bsse0004\AppData\Local\npm-cache\_logs\2025-01-08T11_31_50_387Z-debug-0.log
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ touch package.json
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ npm init -y
+
+npm error code EJSONPARSE
+npm error JSON.parse Invalid package.json: JSONParseError: Unexpected end of JSON input while parsing empty string
+npm error JSON.parse Failed to parse JSON data.
+npm error JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+npm error A complete log of this run can be found in: C:\Users\l1f19bsse0004\AppData\Local\npm-cache\_logs\2025-01-08T11_32_18_696Z-debug-0.log
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git commit -m "initial commit"
+[develop (root-commit) a805613] initial commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 package.json
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git puch origin develop
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git push origin develop
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 265 bytes | 265.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Roohan0004/devops12s42.git
+ * [new branch]      develop -> develop
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git commit -m "initial commit"
+[develop ddf06a3] initial commit
+ 1 file changed, 11 insertions(+)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git push origin develop
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 405 bytes | 405.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Roohan0004/devops12s42.git
+   a805613..ddf06a3  develop -> develop
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git branch feature/linting-wf
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git switch feature/linting-wf
+Switched to branch 'feature/linting-wf'
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ mkdir -p ./.github/workflows
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ touch ./.github/workflows/lint.yml
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ code .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ touch .htmllintrc.json .stylelintrc.json
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ git status
+On branch feature/linting-wf
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .github/
+        .htmllintrc.json
+        .stylelintrc.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ git commit -m "add lint.yml, .htmllintrc.json, .stylelintrc.json"
+[feature/linting-wf e0d0f49] add lint.yml, .htmllintrc.json, .stylelintrc.json
+ 3 files changed, 27 insertions(+)
+ create mode 100644 .github/workflows/lint.yml
+ create mode 100644 .htmllintrc.json
+ create mode 100644 .stylelintrc.json
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ git push origin develop
+Everything up-to-date
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ git push origin feature/linting-wf
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 748 bytes | 748.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature/linting-wf' on GitHub by visiting:
+remote:      https://github.com/Roohan0004/devops12s42/pull/new/feature/linting-wf
+remote:
+To https://github.com/Roohan0004/devops12s42.git
+ * [new branch]      feature/linting-wf -> feature/linting-wf
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/linting-wf)
+$ git switch develop
+Switched to branch 'develop'
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git pull origin develop
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 925 bytes | 132.00 KiB/s, done.
+From https://github.com/Roohan0004/devops12s42
+ * branch            develop    -> FETCH_HEAD
+   ddf06a3..44f67e9  develop    -> origin/develop
+Updating ddf06a3..44f67e9
+Fast-forward
+ .github/workflows/lint.yml | 27 +++++++++++++++++++++++++++
+ .htmllintrc.json           |  0
+ .stylelintrc.json          |  0
+ 3 files changed, 27 insertions(+)
+ create mode 100644 .github/workflows/lint.yml
+ create mode 100644 .htmllintrc.json
+ create mode 100644 .stylelintrc.json
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git branch feature/index
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git switch feature/index
+Switched to branch 'feature/index'
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ touch ./src/index.html ./styles/index.css
+touch: cannot touch './styles/index.css': No such file or directory
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ touch ./style/index.css
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ code .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git status
+On branch feature/index
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/
+        style/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git commit -m "add index.html, index.css "
+[feature/index beeb633] add index.html, index.css
+ 2 files changed, 15 insertions(+)
+ create mode 100644 src/index.html
+ create mode 100644 style/index.css
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git push origin feature/index
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 622 bytes | 622.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature/index' on GitHub by visiting:
+remote:      https://github.com/Roohan0004/devops12s42/pull/new/feature/index
+remote:
+To https://github.com/Roohan0004/devops12s42.git
+ * [new branch]      feature/index -> feature/index
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git status
+On branch feature/index
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .github/workflows/lint.yml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git commit -m "modify lint.yml"
+[feature/index 0d78a39] modify lint.yml
+ 1 file changed, 26 insertions(+), 27 deletions(-)
+ rewrite .github/workflows/lint.yml (84%)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git push origin feature/index
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 500 bytes | 500.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Roohan0004/devops12s42.git
+   beeb633..0d78a39  feature/index -> feature/index
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git commit -m "modify .stylelintrc.css"
+[feature/index d225e56] modify .stylelintrc.css
+ 1 file changed, 5 insertions(+)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git push origin feature/index
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Roohan0004/devops12s42.git
+   0d78a39..d225e56  feature/index -> feature/index
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git commit -m "modify index.css"
+On branch feature/index
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style/index.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git commit -m "modify index.css"
+[feature/index 1150e72] modify index.css
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git push origin feature/index
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 332 bytes | 332.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Roohan0004/devops12s42.git
+   d225e56..1150e72  feature/index -> feature/index
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git add .
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git commit -m "modify index.html"
+[feature/index 8611f54] modify index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git push origin feature/index
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 343 bytes | 343.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Roohan0004/devops12s42.git
+   1150e72..8611f54  feature/index -> feature/index
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git add .
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git commit -m "modify index.html and index.css"
+[feature/index c29e507] modify index.html and index.css
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git push origin feature/index
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 477 bytes | 477.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Roohan0004/devops12s42.git
+   8611f54..c29e507  feature/index -> feature/index
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (feature/index)
+$ git switch develop
+Switched to branch 'develop'
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ git pull origin develop
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 907 bytes | 151.00 KiB/s, done.
+From https://github.com/Roohan0004/devops12s42
+ * branch            develop    -> FETCH_HEAD
+   44f67e9..b0ffc68  develop    -> origin/develop
+Updating 44f67e9..b0ffc68
+Fast-forward
+ .github/workflows/lint.yml | 35 +++++++++++++++++------------------
+ .stylelintrc.json          |  5 +++++
+ src/index.html             | 12 ++++++++++++
+ style/index.css            |  3 +++
+ 4 files changed, 37 insertions(+), 18 deletions(-)
+ create mode 100644 src/index.html
+ create mode 100644 style/index.css
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$ touch gitcode.txt
+
+l1f19bsse0004@UCP-LBA-203-43 MINGW64 ~/Documents/devops12s42 (develop)
+$
